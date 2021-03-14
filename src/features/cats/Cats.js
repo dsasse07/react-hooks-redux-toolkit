@@ -4,8 +4,8 @@ import CatList from "./CatList";
 import { fetchCats } from "./catsSlice";
 
 function Cats() {
-  const catPics = useSelector((state) => state.cats.entities);
-
+  const catPics = useSelector((state) => state.cats.cats);
+  console.log('catPics', catPics)
   const dispatch = useDispatch();
 
   useEffect(() => {
